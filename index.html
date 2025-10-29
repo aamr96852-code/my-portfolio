@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="session 10.css">
+    <link rel="icon" type="image/png" href="logo.JPG"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Naira Ahmed | Frontend Developer</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <p>Naira</p>
+        </div>
+
+        <div class="menu-icon" id="menu-icon">
+           <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div>
+        <ul class="links" id="links">
+           <li><a href="index.html">Home</a></li>
+           <li><a href="#about-me">About Me</a></li>
+           <li><a href="#my-skills">My Skills</a></li>
+           <li><a href="#project">Projects</a></li>
+           <li><a href="#contact-me">Contact Me</a></li>
+        </ul>
+        </div>
+    </nav>
+
+    <div class="main">
+        <div class="data">
+            <p class="hello">Hello, I am <br>
+              <span style="color: #1877f2; font-weight: bold;"> Eng/ Naira Ahmed</span></p>
+            <p class="text">A passionate programming instructor for kids <br>
+                 and aspiring web developer .</p>
+            <a href="Naira Ahmed - English Resume .pdf" class="cv" download>CV Download</a>
+        <div class="icons">
+                <a href="https://www.linkedin.com/in/naira-ahmed-73754b300/" target="_blank"><i class="fa-brands fa-square-linkedin"></i></a>
+                <a href="https://www.facebook.com/naira.ahmed.75457081" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+                <a href="https://web.whatsapp.com/" target="_blank"><i class="fa-brands fa-square-whatsapp"></i></a>
+        </div>
+        </div>
+        <div class="image">
+            <img src="naira.jpeg">
+        </div>
+    </div>
+    
+    <div class="about" id="about-me">
+        <h2>About Me</h2>
+        <p>I’m <strong>Naira Ahmed</strong>, a passionate <strong>programming instructor for kids</strong> and an aspiring
+    <strong>front-end developer</strong>.  
+    I believe that programming isn’t just about writing code — it’s about creativity, problem-solving, and
+    making ideas come to life.  
+    My goal is to inspire children to see technology as a way to express themselves and build a brighter future.  
+    I’m constantly learning, improving, and exploring new ways to make tech education fun and meaningful. 💻✨</p>
+    </div>
+    
+    <div class="skills" id="my-skills">
+       <h2>My Skils</h2>
+
+       <p>Scratch</p>
+       <div class="skill">
+        <div class="bg skill1">95%</div>
+       </div>
+
+       <p>HTML</p>
+        <div class="skill">
+        <div class="bg skill2">90%</div>
+       </div>
+
+       <p>CSS</p>
+        <div class="skill">
+        <div class="bg skill3">85%</div>
+       </div>
+
+       <p>C++</p>
+        <div class="skill">
+        <div class="bg skill4">80%</div>
+       </div>
+    </div>
+    
+    <div class="Projects" id="project">
+        <h2>My Projects</h2>
+        <div class="card_parent">
+           <div class="cardd">
+            <img src="photo 1.jpg">
+            <a href="#">View Project</a>
+        </div>
+        <div class="cardd">
+            <img src="photo 2.jpg">
+            <a href="#">View Project</a>
+        </div>
+        <div class="cardd">
+            <img src="photo 3.jpg">
+            <a href="#">View Project</a>
+        </div>
+        <div class="cardd">
+            <img src="photo 4.jpg">
+            <a href="#">View Project</a>
+        </div>
+        <div class="cardd">
+            <img src="photo 5 .jpg">
+            <a href="#">View Project</a>
+        </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-me">
+        <h2>Contact Me</h2>
+        <div class="Form">
+             <form>
+                <label for="name">Your Name</label>
+                <input type="text" id="name"><br>
+                <label for="phone">Your Phone</label>
+                <input type="tel" id="phone"><br>
+                <label for="email">Your E-mail</label>
+                <input type="email" id="email"><br>
+                <textarea name="message" placeholder="Your Message" rows="8" cols="34"></textarea><br>
+                <button type="submit" >Send</button>
+             </form>
+        </div>
+    </div>
+
+    <div class="naira">
+    &copy;Naira Ahmed Erfan
+    <a href="mailto:aamr96852@gmail.com" target="_blank">aamr96852@gmail.com</a>
+   </div>
+
+
+<script>
+  const menuIcon = document.getElementById('menu-icon');
+  const links = document.getElementById('links');
+  menuIcon.addEventListener('click', () => {
+    links.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>

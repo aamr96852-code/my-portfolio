@@ -1,0 +1,396 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(to right, #e3f2fd , #ffffff);
+    scroll-behavior: smooth;
+    padding-top: 50px;
+}
+nav{
+    color: white;
+    background-color:#662222 ;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 20px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    height: 50px;
+}
+.logo {
+  font-family: "Bungee", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: xx-large;
+}
+.links {
+list-style: none;
+display: flex;
+gap: 20px;
+}
+.links a {
+    color: white;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-decoration: none;
+}
+.links a:hover{
+    color: #662222;
+    background-color: white;
+    border: solid 2px  white;
+    border-radius: 4px;
+}
+.logo :hover{
+    transform: skew(-17deg , 0);
+}
+.main{
+    width: 100%;
+    height: 351px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.menu-icon {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+  color: white;
+  position: absolute;
+  right: 20px;
+  top: 15px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+.data{
+  margin-left: 50px;
+  font-family: "Pacifico", cursive;
+  font-weight: lighter;
+  font-style: normal;
+}
+.hello{
+   margin-top: 10px ;
+   margin-bottom: 15px;
+   font-size: 30px;
+}
+.text{
+ margin-bottom: 15px;
+}
+.cv{
+    text-decoration: none;
+    color:#662222;
+    font-weight: bold;
+    background-color: white;
+    border: #662222 solid 2px;
+    padding: 2px;
+    border-radius: 4px;
+}
+.icons{
+    margin-top: 10px;
+}
+.icons a{
+    color: #333;
+}
+.image {
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.image img{
+    width: 89%;
+    height: 200px;
+    border: 3px solid #F5DAA7;
+    border-radius: 10px;
+    margin-right: 50px;
+}
+.image img:hover{
+    transform: scale(1.2);
+    transition: 1s ease-in-out 1s;
+}
+.about {
+    width: 100%;
+    padding: 10%;
+    text-align: center;
+}
+.about p{
+  color: #444;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+}
+/* للأجهزة الصغيرة (موبايلات) */
+@media (max-width: 768px) {
+  nav {
+    flex-direction: row;
+    height: auto;
+  }
+
+ .links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    background-color: #662222;
+    width: 100%;
+    text-align: center;
+    padding: 15px 0;
+    gap: 10px;
+  }
+  .links.active {
+    display: flex;
+  }
+
+  .menu-icon {
+    display: block;
+  }
+
+  .main {
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+    padding: 60px 20px;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  .data {
+    margin-left: 0;
+    text-align: center;
+  }
+  .image img {
+    width: 200px;
+    height: auto;
+    margin: 20px 0;
+  }
+
+  .hello {
+    font-size: 24px;
+  }
+
+  .text {
+    font-size: 14px;
+  }
+
+  .cv {
+    padding: 8px 16px;
+    font-size: 14px;
+  }
+
+  .about {
+    padding: 40px 20px;
+  }
+
+  .about h2 {
+    font-size: 28px;
+  }
+
+  .about p {
+    font-size: 14px;
+  }
+}
+/* للأجهزة المتوسطة (تابلت) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .main {
+    flex-direction: row;
+    text-align: left;
+    padding: 40px;
+  }
+  .hello {
+    font-size: 28px;
+  }
+
+  .text {
+    font-size: 16px;
+  }
+
+  .cv {
+    font-size: 15px;
+  }
+
+  .image img {
+    width: 100%;
+    height: auto;
+  }
+
+  .about {
+    padding: 60px;
+  }
+
+  .about h2 {
+    font-size: 36px;
+  }
+
+  .about p {
+    font-size: 18px;
+  }
+}
+/* للشاشات الكبيرة (ديسكتوب) */
+@media (min-width: 1025px) {
+  .main {
+    padding: 80px 100px;
+  }
+
+  .hello {
+    font-size: 34px;
+  }
+
+  .text {
+    font-size: 18px;
+  }
+
+  .cv {
+    padding: 10px 25px;
+    font-size: 16px;
+  }
+
+  .about h2 {
+    font-size: 48px;
+  }
+
+  .about p {
+    font-size: 20px;
+  }
+}
+.skills {
+    width: 100%;
+    padding: 10%;
+}
+.skills h2, .about h2, .Projects h2, .contact h2{
+    margin-bottom: 4%;
+    color: #662222;
+    text-align: center;
+    font-size: 3em;
+    font-family: "Josefin Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal; 
+}
+.skills p{
+  color: #444;
+  font-size: 1.1rem;
+  font-family: "Dancing Script", cursive;
+  font-optical-sizing: auto;
+  font-weight: <weight>;
+  font-style: normal;
+  padding: 2px;
+}
+.skill, .bg  {
+  background-color: black;
+  border-radius: 20px;
+  height: 15px;
+  text-align: center;
+}
+.skill1 {
+  background-color: #84994F;
+  width: 95%;
+}
+.skill2 {
+  background-color: #FFE797;
+  width: 90%;
+}
+.skill3 {
+  background-color: #FCB53B;
+  width: 85%;
+}
+.skill4 {
+  background-color: #A72703;
+  width: 80%;
+}
+.card_parent{
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 25px;
+}
+.card_parent .cardd {
+   width: 250px;
+   background-color: white;
+   border-radius: 20px;
+   box-shadow:5px 5px 2px 2px rgb(210, 203, 203)  ;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 20px;
+   padding-bottom: 15px;
+   margin-bottom: 60px;
+}
+.card_parent .cardd img{
+    width: 100%;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+.card_parent .cardd a{
+    background-color: #662222;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 15px !important;
+    text-decoration: none;
+}
+.card_parent .cardd a:hover{
+    background-color: white!important;
+    color:  #662222 !important;
+    border: solid 2px  #662222;
+}
+.Form {
+  display: flex;
+  justify-content: center;
+  font-family: Arial, Helvetica, sans-serif ;
+  font-weight: bold;
+  color: #444;
+  margin-top: 40px;
+}
+.Form input, .Form textarea{
+  padding: 2px;
+  margin-bottom: 8px;
+  padding-left: 6px;
+  border-radius: 6px;
+  border: black 1px solid;
+}
+.Form button {
+ width: 90px;
+ display: block;
+ margin: 0 auto;
+ cursor: pointer;
+ background-color: white;
+ padding: 5px;
+ border-radius: 8px;
+ border: black 1px solid;
+ font-weight: bold;
+ margin-bottom: 20px;
+}
+.Form button:hover {
+  background-color: #84994F;
+  color: white;
+  border: none;
+}
+.naira {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  background-color: #662222;
+  color: white;
+  font-weight: bold;
+  height: 40px;
+  padding: 6px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.naira a{
+  text-decoration: none;
+  color: white;
+}
+@media (min-width:300px) and (max-width:395px) {
+ .naira{
+  display: block;
+  height: 50px;
+  text-align: center;
+ }
+}
